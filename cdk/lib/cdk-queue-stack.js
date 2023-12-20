@@ -25,6 +25,12 @@ class CdkQueueStack extends Stack {
           queueName: `${queueName}-${stackName}-${i}`
         });
         queues.push(queue)
+
+        new CfnOutput(this, `${queueName}-${stackName}-${i}-url`, {
+          value: queue.queueUrl,
+          description: `${queueName}-${stackName}-${i}-url`
+        })
+
       }
       return queues
     }
