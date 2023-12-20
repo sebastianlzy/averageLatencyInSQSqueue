@@ -1,0 +1,56 @@
+{
+  "CdkQueueStack-2": {
+    "snsTopicArnCdkQueueStack2": "arn:aws:sns:ap-southeast-1:789043580640:CdkQueueStack-2-CdkQueueStack2latencySNSA5C4E848-susR9aMGHkWH"
+  },
+  "CdkQueueStack-3": {
+    "snsTopicArnCdkQueueStack3": "arn:aws:sns:ap-southeast-1:789043580640:CdkQueueStack-3-CdkQueueStack3latencySNSC1A158C9-pA4fsgoWP5o0"
+  },
+  "CdkQueueStack-0": {
+    "snsTopicArnCdkQueueStack0": "arn:aws:sns:ap-southeast-1:789043580640:CdkQueueStack-0-CdkQueueStack0latencySNS3D4DD70A-ovNf33jVQAy1"
+  },
+  "CdkQueueStack-1": {
+    "snsTopicArnCdkQueueStack1": "arn:aws:sns:ap-southeast-1:789043580640:CdkQueueStack-1-CdkQueueStack1latencySNSBDA7696A-iyjOhXYmFdJX"
+  },
+  "CdkQueueStack-4": {
+    "snsTopicArnCdkQueueStack4": "arn:aws:sns:ap-southeast-1:789043580640:CdkQueueStack-4-CdkQueueStack4latencySNS1E358BF6-H5n4tMchzari"
+  },
+  "CdkQueueStack-14": {
+    "snsTopicArnCdkQueueStack14": "arn:aws:sns:ap-southeast-1:789043580640:CdkQueueStack-14-CdkQueueStack14latencySNS08C6EAC2-yTSJ0XIOXHsd"
+  },
+  "CdkQueueStack-17": {
+    "snsTopicArnCdkQueueStack17": "arn:aws:sns:ap-southeast-1:789043580640:CdkQueueStack-17-CdkQueueStack17latencySNS67441258-CW4lvUs5OhCK"
+  },
+  "CdkQueueStack-8": {
+    "snsTopicArnCdkQueueStack8": "arn:aws:sns:ap-southeast-1:789043580640:CdkQueueStack-8-CdkQueueStack8latencySNSE590E640-JXH7JpLzGJoH"
+  },
+  "CdkQueueStack-12": {
+    "snsTopicArnCdkQueueStack12": "arn:aws:sns:ap-southeast-1:789043580640:CdkQueueStack-12-CdkQueueStack12latencySNS37620244-dX4QJJhV6qRv"
+  },
+  "CdkQueueStack-5": {
+    "snsTopicArnCdkQueueStack5": "arn:aws:sns:ap-southeast-1:789043580640:CdkQueueStack-5-CdkQueueStack5latencySNS12633965-5GwwAGaf8zd5"
+  },
+  "CdkQueueStack-11": {
+    "snsTopicArnCdkQueueStack11": "arn:aws:sns:ap-southeast-1:789043580640:CdkQueueStack-11-CdkQueueStack11latencySNS41FB7FAC-S0MyLu1vz0KA"
+  },
+  "CdkQueueStack-7": {
+    "snsTopicArnCdkQueueStack7": "arn:aws:sns:ap-southeast-1:789043580640:CdkQueueStack-7-CdkQueueStack7latencySNSEA532863-5qZu245EyOEk"
+  },
+  "CdkQueueStack-16": {
+    "snsTopicArnCdkQueueStack16": "arn:aws:sns:ap-southeast-1:789043580640:CdkQueueStack-16-CdkQueueStack16latencySNS8B757980-TwGkhxqjj5qm"
+  },
+  "CdkQueueStack-6": {
+    "snsTopicArnCdkQueueStack6": "arn:aws:sns:ap-southeast-1:789043580640:CdkQueueStack-6-CdkQueueStack6latencySNSCB7B2485-pQg0ImY7IfZT"
+  },
+  "CdkQueueStack-15": {
+    "snsTopicArnCdkQueueStack15": "arn:aws:sns:ap-southeast-1:789043580640:CdkQueueStack-15-CdkQueueStack15latencySNS3D8D59C8-fknc5fHli52X"
+  },
+  "CdkQueueStack-9": {
+    "snsTopicArnCdkQueueStack9": "arn:aws:sns:ap-southeast-1:789043580640:CdkQueueStack-9-CdkQueueStack9latencySNS9305914F-CuhQpmk8d9lV"
+  },
+  "CdkQueueStack-13": {
+    "snsTopicArnCdkQueueStack13": "arn:aws:sns:ap-southeast-1:789043580640:CdkQueueStack-13-CdkQueueStack13latencySNS2D395370-Ar6D6KDJS4wh"
+  },
+  "CdkQueueStack-10": {
+    "snsTopicArnCdkQueueStack10": "arn:aws:sns:ap-southeast-1:789043580640:CdkQueueStack-10-CdkQueueStack10latencySNS7B1AAFB2-EVCAT4tz7yiY"
+  }
+}
