@@ -22,7 +22,7 @@ class CdkLambdaStack extends Stack {
             handler: 'index.main',
             code: lambda.Code.fromAsset(path.join(__dirname, '../../src')),
             timeout: Duration.seconds(900),
-            memorySize: 128
+            memorySize: 512
         });
 
     }

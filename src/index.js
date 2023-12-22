@@ -163,24 +163,57 @@ const send50000MessagesToQueues = async () =>{
     }
 }
 
+const pollQueuesSequentially = async (queueUrls) => {
+    await measurePerformance("PerformanceToQuery 1800 queues sequentially", async () => {
+
+        for (const queueUrl of queueUrls) {
+            // measurePerformance(queueUrl, async () => {
+            const approximateNumberOfMessage = await getApproximateNumberOfMessages(queueUrl)
+            // console.log(`${approximateNumberOfMessage} messages in ${queueUrl}`)
+            // })
+        }
+    })
+}
+
+const getApproximateNumberOfMessagesPromise = (queueUrl) => {
+    const input = { // GetQueueAttributesRequest
+        QueueUrl: queueUrl, // required
+        AttributeNames: ["All"]
+    };
+    const command = new GetQueueAttributesCommand(input);
+    return sqsClient.send(command);
+    // const result = await sqsClient.send(command);
+    // return result['Attributes']['ApproximateNumberOfMessages']
+}
+
+const pollQueuesInParallel = async (queueUrls) => {
+    await measurePerformance("PerformanceToQuery 1800 queues parallel", async () => {
+        const approximateNumberOfMessagePromises = []
+        for (const queueUrl of queueUrls) {
+            // measurePerformance(queueUrl, async () => {
+            approximateNumberOfMessagePromises.push(getApproximateNumberOfMessagesPromise(queueUrl))
+            // console.log(`${approximateNumberOfMessage} messages in ${queueUrl}`)
+            // })
+        }
+        
+        const results = await Promise.all(approximateNumberOfMessagePromises)
+        
+    })
+}
+
+
+
+
 const main = async () => {
     
     // Sending 50000 messages to 1800 queues
     // await send50000MessagesToQueues()
     
     // Performance measuring in queue
-    const methodName = "getApproximateNumberOfMessages"
     const queueUrls = getSQSqueueUrls(cdkOutput)
-
-    await measurePerformance("PerformanceToQuery 1800 queues", async () => {
-        
-        for (const queueUrl of queueUrls) {
-            // measurePerformance(queueUrl, async () => {
-                const approximateNumberOfMessage = await getApproximateNumberOfMessages(queueUrl)
-                // console.log(`${approximateNumberOfMessage} messages in ${queueUrl}`)
-            // })
-        }
-    })
+    // await pollQueuesSequentially(queueUrls)
+    await pollQueuesInParallel(queueUrls)
+   
     
     
     

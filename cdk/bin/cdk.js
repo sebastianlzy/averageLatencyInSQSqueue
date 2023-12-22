@@ -3,7 +3,6 @@
 const cdk = require('aws-cdk-lib');
 const { CdkQueueStack } = require('../lib/cdk-queue-stack');
 const { CdkLambdaStack } = require('../lib/cdk-lambda-stack');
-const { CdkPowerTuningStack } = require('../lib/cdk-power-tuning-stack');
 
 const app = new cdk.App();
 
